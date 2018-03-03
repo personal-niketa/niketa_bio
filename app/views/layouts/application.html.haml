@@ -1,0 +1,28 @@
+!!!
+%html
+  %head
+    %title textured_orbs
+    %meta{:content => "website description", :name => "description"}/
+    %meta{:content => "website keywords, website keywords", :name => "keywords"}/
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "content-type"}/
+    = stylesheet_link_tag "custom"
+    = javascript_include_tag 'application'
+  %body
+    #main
+      #header
+        #logo
+          #logo_text
+            / class="logo_colour", allows you to change the colour of the text
+            %h1
+              %a{:href => "index.html"}
+                Niketa Sharma
+            %h2.logo_colour Software Developer
+        = render 'partial/menu'
+      #content_header
+      #site_content
+        #banner
+        = yield
+      #content_footer
+      #footer
+        %p
+          Copyright © 2018| Niketa Sharma
