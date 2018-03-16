@@ -100,12 +100,12 @@ ol li
   border-bottom: 2px solid #E7746F;
   height: 177px;}
   
-#banner
+/*#banner
 { background: transparent url(banner.jpg) no-repeat;
   width: 870px;
   height: 180px;
   margin-bottom: 20px;
-  border: 5px solid #E7746F;}
+  border: 5px solid #E7746F;}*/
 
 #logo
 { width: 880px;
@@ -330,3 +330,27 @@ table tr td
 { background: #E5E5DB;
   color: #47433F;
   border-top: 1px solid #FFF;}
+
+ .container-new{
+  float:left;
+  width:90%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid red;
+  border-radius: 25px;
+  /*height: 200px;*/
+}
+
+
+
+.container-resume{
+  float:left;
+  width:50%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid red;
+  border-radius: 25px;
+  color: #E7746F;
+  font-size: large;
+  /*height: 200px;*/
+}

@@ -1,10 +1,39 @@
-%h1 Contact
-jkjklnkjbndvjbj
-dnvjnjsdbvjbj
+%font{:size => "6" , :color => "#E7746F"} Contact Details
+= form_tag(bioinfo_contact_details_path, method: 'get', :remote => true) do 
+  = label_tag(:name, "Name:")
+  &nbsp; 
+  %input{:name => "name", :type => "text" , :required => true}
+  %br/
+  %br
+  = label_tag(:email, "Email:")
+  &nbsp; 
+  %input{:name => "email", :type => "text" , :required => true}
+  %br/
+  %br
+  = label_tag(:message, "Message:")
+  &nbsp; 
+  %textarea{name: 'message' , :cols => "40", :rows => "3" , :required => true}
+  %br/
+  %br
+  = submit_tag("Submit")
+  %br
+  %br
+  #details_div
+    %table{border: '1'}
+      %tr
+        %th Name
+        %th Email
+        %th Message
+      %tr
+        %td#n
+        %td#e
+        %td#m
 :javascript
   $(document).ready(function() {
     $('#contact_link').addClass('selected');
     $('#about_link').removeClass('selected');    
+
   });
+
 
   
